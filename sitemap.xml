@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Add a <url> for each new blog post: https://shotengaido.jp/updates/<slug> -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://shotengaido.jp/</loc><lastmod>2026-09-12</lastmod><priority>1.0</priority></url>
+  <url><loc>https://shotengaido.jp/contribute</loc><lastmod>2026-09-12</lastmod><priority>0.9</priority></url>
+  <url><loc>https://shotengaido.jp/about</loc><lastmod>2026-09-12</lastmod><priority>0.9</priority></url>
+  <url><loc>https://shotengaido.jp/features</loc><lastmod>2026-09-12</lastmod><priority>0.7</priority></url>
+  <url><loc>https://shotengaido.jp/updates</loc><lastmod>2026-09-12</lastmod><priority>0.8</priority></url>
+  <url><loc>https://shotengaido.jp/team</loc><lastmod>2026-09-12</lastmod><priority>0.6</priority></url>
+  <url><loc>https://shotengaido.jp/team/circle</loc><lastmod>2026-09-12</lastmod><priority>0.6</priority></url>
+  <url><loc>https://shotengaido.jp/about/abstract</loc><lastmod>2026-09-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://shotengaido.jp/contact</loc><lastmod>2026-09-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://shotengaido.jp/privacy</loc><lastmod>2026-09-12</lastmod><priority>0.3</priority></url>
+  <url><loc>https://shotengaido.jp/terms</loc><lastmod>2026-09-12</lastmod><priority>0.3</priority></url>
+  <url><loc>https://shotengaido.jp/updates/closed-beta-ends-this-year</loc><lastmod>2026-09-11</lastmod></url>
+  <url><loc>https://shotengaido.jp/updates/who-reviews-the-map</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://shotengaido.jp/updates/the-editing-machinery</loc><lastmod>2026-08-12</lastmod></url>
+  <url><loc>https://shotengaido.jp/updates/six-weeks-of-beta</loc><lastmod>2026-07-18</lastmod></url>
+  <url><loc>https://shotengaido.jp/updates/closed-beta-is-live</loc><lastmod>2026-06-22</lastmod></url>
+  <url><loc>https://shotengaido.jp/updates/redesign-warmer</loc><lastmod>2026-05-09</lastmod></url>
+  <url><loc>https://shotengaido.jp/updates/first-prototype</loc><lastmod>2026-03-14</lastmod></url>
+  <url><loc>https://shotengaido.jp/updates/not-a-business</loc><lastmod>2026-01-20</lastmod></url>
+  <url><loc>https://shotengaido.jp/updates/thesis-is-not-a-map</loc><lastmod>2025-11-03</lastmod></url>
+</urlset>

@@ -1,4 +1,6 @@
 {
-  "source": "unchanged from shotengaido_alpha (tag live-2026-09-13)",
-  "repo": "shotengaido_site"
+  "source": "0524b93",
+  "subject": "package-lock: sync package name with package.json",
+  "branch": "main",
+  "deployedAt": "2026-09-15T19:01:49.438Z"
 }
