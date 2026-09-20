@@ -1,6 +1,6 @@
 {
-  "source": "7b55644",
-  "subject": "Update dependencies to fix npm audit vulnerabilities",
+  "source": "231ce5f",
+  "subject": "Add a handoff document and the screenshot tool",
   "branch": "main",
-  "deployedAt": "2026-09-16T18:59:49.945Z"
+  "deployedAt": "2026-09-20T15:26:49.123Z"
 }
