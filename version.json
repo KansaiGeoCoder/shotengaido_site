@@ -1,6 +1,6 @@
 {
-  "source": "723e0d8",
-  "subject": "Basemaps for the street cards; parks green; sturdier basemap loading",
+  "source": "ed34c2f",
+  "subject": "Home map: draw the streets only against a settled camera",
   "branch": "main",
-  "deployedAt": "2026-09-22T16:18:21.802Z"
+  "deployedAt": "2026-09-22T19:38:11.682Z"
 }
