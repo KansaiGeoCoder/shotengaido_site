@@ -1,6 +1,6 @@
 {
-  "source": "8198d78",
-  "subject": "Home map on the Mapbox basemap, category colours, multi-part streets",
+  "source": "723e0d8",
+  "subject": "Basemaps for the street cards; parks green; sturdier basemap loading",
   "branch": "main",
-  "deployedAt": "2026-09-22T15:28:37.685Z"
+  "deployedAt": "2026-09-22T16:18:21.802Z"
 }
