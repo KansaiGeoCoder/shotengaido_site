@@ -1,6 +1,6 @@
 {
-  "source": "ed34c2f",
-  "subject": "Home map: draw the streets only against a settled camera",
+  "source": "e599c41",
+  "subject": "Home map: stop opening a street from leaving a copy of the map behind",
   "branch": "main",
-  "deployedAt": "2026-09-22T19:38:11.682Z"
+  "deployedAt": "2026-09-22T19:52:07.965Z"
 }
