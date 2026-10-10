@@ -1,6 +1,6 @@
 {
-  "source": "4c96694",
-  "subject": "Hero list no longer catches the scroll wheel",
+  "source": "fe2ae54",
+  "subject": "Hero list hands the wheel to the page at its end",
   "branch": "main",
-  "deployedAt": "2026-10-10T17:33:31.023Z"
+  "deployedAt": "2026-10-10T17:40:15.626Z"
 }
