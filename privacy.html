@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+  <script>if (location.pathname === '/' && !new URLSearchParams(location.search).has('p')) {
+  window["__sgMapData"] = Object.fromEntries(Object.entries({"streets":"shotengai?select=id,name_jp,name_en,city,ward,prefecture,slug,length_m,is_roofed,design_type,photos,tagline,tagline_en,geometry,created_at&order=created_at.desc","members":"shotengai?select=id&association_user_id=not.is.null","stats":"rpc/site_stats"}).map(([query, path]) =>
+    [query, fetch("https://bsximwipjuxcltcljfag.supabase.co/rest/v1/" + path, { headers: { apikey: "sb_publishable_yL9S7KxzRflN7v1REs5cqA_ytXe8FyP" } })
+      .then(res => (res.ok ? res.json() : null)).catch(() => null)]));
+}</script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>プライバシーポリシー | 商店街ド</title>
@@ -39,7 +45,7 @@
       if (p) window.history.replaceState(null, '', p + window.location.hash);
     })();
   </script>
-  <script type="module" crossorigin src="/assets/index-CM7AuDCT.js"></script>
+  <script type="module" crossorigin src="/assets/index-BOpK7gml.js"></script>
   <link rel="modulepreload" crossorigin href="/assets/react-DCGcMjVA.js">
   <link rel="modulepreload" crossorigin href="/assets/supabase-Dq-Jb853.js">
   <link rel="stylesheet" crossorigin href="/assets/index-CJUBnsn6.css">
