@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <script>(() => {
+  const href = "/assets/fonts-D6mv-4dL.css", key = 'sg-font-css';
+  try { if (localStorage.getItem(key) === href) { document.write('<link rel="stylesheet" href="' + href + '">'); return; } } catch {}
+  const link = document.createElement('link');
+  link.rel = 'preload'; link.as = 'style'; link.href = href;
+  link.onload = () => { link.onload = null; link.rel = 'stylesheet'; try { localStorage.setItem(key, href); } catch {} };
+  document.head.appendChild(link);
+})();</script>
+
+  <script>(() => {
+  const queries = {"/":{"streets":"shotengai?select=id,name_jp,name_en,city,ward,prefecture,slug,length_m,is_roofed,design_type,photos,tagline,tagline_en,geometry,created_at&sketch=is.false&order=created_at.desc","members":"shotengai?select=id&association_user_id=not.is.null&sketch=is.false","stats":"rpc/site_stats"},"/events":{"events":"shotengai_events?select=id,shotengai_id,title_en,title_jp,description_en,description_jp,event_date,end_date,event_time,is_recurring,recurrence_note,url&or=(is_recurring.eq.true,event_date.gte.{today},end_date.gte.{today})&order=event_date.asc.nullslast","streets":"shotengai?select=id,name_jp,name_en,city,ward,prefecture,slug,length_m,is_roofed,design_type,photos,tagline,tagline_en,geometry,created_at&sketch=is.false&order=created_at.desc"},"/features":{"stats":"rpc/site_stats"}}[location.pathname.replace(/\/+$/, '') || '/'];
+  if (!queries || new URLSearchParams(location.search).has('p')) return;
+  const today = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Tokyo' }).format(new Date());
+  window["__sgMapData"] = Object.fromEntries(Object.entries(queries).map(([query, path]) =>
+    [query, fetch("https://bsximwipjuxcltcljfag.supabase.co/rest/v1/" + path.replaceAll("{today}", today), { headers: { apikey: "sb_publishable_yL9S7KxzRflN7v1REs5cqA_ytXe8FyP" } })
+      .then(res => (res.ok ? res.json() : null)).catch(() => null)]));
+})();</script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>アップデート | 商店街ド</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="theme-color" content="#bc002d">
+  <meta name="description" content="商店街ドの新着情報。新しい機能や地図の変化を新しい順に。編集のしくみと、プロジェクトのはじまりも。" />
+  <link rel="canonical" href="https://shotengaido.jp/updates/the-fourth-week" />
+
+  <!-- Open Graph (Facebook, LINE, WhatsApp, Discord, etc.) -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://shotengaido.jp/updates/the-fourth-week" />
+  <meta property="og:title"       content="アップデート | 商店街ド" />
+  <meta property="og:description" content="商店街ドの新着情報。新しい機能や地図の変化を新しい順に。編集のしくみと、プロジェクトのはじまりも。" />
+  <meta property="og:image"       content="https://shotengaido.jp/og-image.png" />
+  <meta property="og:image:width"  content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt"   content="商店街ド | みんなでつくる日本の商店街マップ" />
+  <meta property="og:locale"      content="ja_JP" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:site_name"   content="Shotengaido" />
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:url"         content="https://shotengaido.jp/updates/the-fourth-week" />
+  <meta name="twitter:title"       content="アップデート | 商店街ド" />
+  <meta name="twitter:description" content="商店街ドの新着情報。新しい機能や地図の変化を新しい順に。編集のしくみと、プロジェクトのはじまりも。" />
+  <meta name="twitter:image"       content="https://shotengaido.jp/og-image.png" />
+
+  <script>
+    // Completes the GitHub Pages SPA redirect: public/404.html encodes the
+    // requested path into ?p=, and this restores it before the app boots.
+    (function () {
+      var p = new URLSearchParams(window.location.search).get('p');
+      if (p) window.history.replaceState(null, '', p + window.location.hash);
+      // Which placeholder to draw below until the site's code runs: the home page's or a page's.
+      document.documentElement.setAttribute('data-shell', window.location.pathname.replace(/\/+$/, '') ? 'page' : 'home');
+    })();
+  </script>
+  <script type="module" crossorigin src="/assets/index-CQnBwSe9.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/react-B-V-RO5S.js">
+  <link rel="stylesheet" crossorigin href="/assets/index-DrQJcbS9.css">
+  <noscript>    <link rel="stylesheet" href="/assets/fonts-D6mv-4dL.css">
+</noscript>
+</head>
+<body class="font-sans overflow-x-hidden bg-cream">
+  <div id="root">
+    <!-- The page before the site's code has run: the header, and placeholders
+         in the shape of the page (components/Skeleton.tsx draws the same once
+         it runs). React replaces all of this as it starts. -->
+    <div class="min-h-screen bg-warm-mesh" aria-busy="true">
+      <p role="status" class="sr-only">読み込み中 · Loading</p>
+      <header aria-hidden="true" class="sticky top-0 z-50 border-b border-beige bg-cream-light/95">
+        <div class="mx-auto flex h-[4.5rem] max-w-7xl items-center justify-between gap-6 px-6">
+          <span class="flex shrink-0 items-center gap-2.5">
+            <svg width="34" height="34" viewBox="0 0 64 64">
+              <rect width="64" height="64" rx="8" fill="#bc002d" />
+              <path d="M6 15 a7 7 0 0 1 14 0 a7 7 0 0 1 14 0 a7 7 0 0 1 14 0 a7 7 0 0 1 14 0 v-3 H6 z" fill="#ffffff" opacity="0.85" />
+              <text x="32" y="51" text-anchor="middle" font-family="'Noto Sans JP Variable', 'Noto Sans JP', sans-serif" font-weight="900" font-size="42" fill="#ffffff">ド</text>
+            </svg>
+            <span class="whitespace-nowrap font-sans text-2xl font-black tracking-tight text-charcoal">商店街ド</span>
+          </span>
+          <span class="flex items-center gap-2 lg:gap-5">
+            <span class="hidden items-center gap-5 lg:flex">
+              <span class="block h-3 w-10 rounded bg-beige/70 animate-pulse motion-reduce:animate-none"></span>
+              <span class="block h-3 w-20 rounded bg-beige/70 animate-pulse motion-reduce:animate-none"></span>
+              <span class="block h-3 w-14 rounded bg-beige/70 animate-pulse motion-reduce:animate-none"></span>
+              <span class="block h-3 w-20 rounded bg-beige/70 animate-pulse motion-reduce:animate-none"></span>
+              <span class="block h-3 w-12 rounded bg-beige/70 animate-pulse motion-reduce:animate-none"></span>
+              <span class="block h-3 w-16 rounded bg-beige/70 animate-pulse motion-reduce:animate-none"></span>
+            </span>
+            <span class="block h-[30px] w-[74px] rounded-lg border border-beige bg-cream"></span>
+            <span class="hidden h-10 w-24 rounded-lg bg-beige/70 animate-pulse motion-reduce:animate-none sm:block"></span>
+            <span class="flex h-10 w-10 flex-col items-center justify-center gap-[5px] lg:hidden">
+              <span class="block h-[2px] w-5 rounded-full bg-charcoal"></span>
+              <span class="block h-[2px] w-5 rounded-full bg-charcoal"></span>
+              <span class="block h-[2px] w-5 rounded-full bg-charcoal"></span>
+            </span>
+          </span>
+        </div>
+      </header>
+
+      <!-- The home page: the title beside the map, as it will stand. -->
+      <section aria-hidden="true" class="shell-home relative border-b border-beige bg-cream lg:flex lg:h-[calc(100svh-4.5rem)] lg:max-h-[880px] lg:min-h-[640px]">
+        <div class="relative z-10 flex flex-col px-6 pb-7 pt-9 lg:w-[calc(max(1.5rem,calc((100vw_-_80rem)/2_+_1.5rem))_+_29rem)] lg:shrink-0 lg:py-10 lg:pl-[max(1.5rem,calc((100vw_-_80rem)/2_+_1.5rem))] lg:pr-10">
+          <span class="block h-3 w-44 rounded bg-beige/70 animate-pulse motion-reduce:animate-none"></span>
+          <span class="mt-6 block h-10 w-[85%] rounded bg-beige/70 animate-pulse motion-reduce:animate-none sm:h-12"></span>
+          <span class="mt-3 block h-10 w-[65%] rounded bg-beige/70 animate-pulse motion-reduce:animate-none sm:h-12"></span>
+          <span class="mt-7 block h-3.5 w-full rounded bg-beige/70 animate-pulse motion-reduce:animate-none"></span>
+          <span class="mt-3 block h-3.5 w-11/12 rounded bg-beige/70 animate-pulse motion-reduce:animate-none"></span>
+          <span class="mt-3 block h-3.5 w-3/4 rounded bg-beige/70 animate-pulse motion-reduce:animate-none"></span>
+          <span class="mt-7 hidden items-center gap-6 lg:flex">
+            <span class="block h-14 w-48 rounded-xl bg-beige/70 animate-pulse motion-reduce:animate-none"></span>
+            <span class="block h-3.5 w-32 rounded bg-beige/70 animate-pulse motion-reduce:animate-none"></span>
+          </span>
+          <span class="mt-9 hidden border-t-2 border-beige-deep pt-4 lg:block">
+            <span class="block h-3 w-40 rounded bg-beige/70 animate-pulse motion-reduce:animate-none"></span>
+            <span class="mt-4 flex items-center gap-3"><span class="block size-6 shrink-0 rounded-full bg-beige/70 animate-pulse motion-reduce:animate-none"></span><span class="block h-3.5 w-48 rounded bg-beige/70 animate-pulse motion-reduce:animate-none"></span></span>
+            <span class="mt-4 flex items-center gap-3"><span class="block size-6 shrink-0 rounded-full bg-beige/70 animate-pulse motion-reduce:animate-none"></span><span class="block h-3.5 w-40 rounded bg-beige/70 animate-pulse motion-reduce:animate-none"></span></span>
+            <span class="mt-4 flex items-center gap-3"><span class="block size-6 shrink-0 rounded-full bg-beige/70 animate-pulse motion-reduce:animate-none"></span><span class="block h-3.5 w-52 rounded bg-beige/70 animate-pulse motion-reduce:animate-none"></span></span>
+          </span>
+        </div>
+        <div class="relative h-[66svh] min-h-[440px] border-t border-beige lg:h-auto lg:min-h-0 lg:flex-1 lg:border-l lg:border-t-0">
+          <div class="absolute inset-0 overflow-hidden bg-[#efe8da]">
+            <svg class="absolute inset-0 h-full w-full">
+              <defs>
+                <pattern id="shell-blocks" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#3a2b27" stroke-opacity="0.045" /></pattern>
+                <pattern id="shell-avenues" width="192" height="192" patternUnits="userSpaceOnUse"><path d="M192 0H0V192" fill="none" stroke="#bc002d" stroke-opacity="0.06" stroke-width="1.2" /></pattern>
+              </defs>
+              <rect width="100%" height="100%" fill="url(#shell-blocks)" />
+              <rect width="100%" height="100%" fill="url(#shell-avenues)" />
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <!-- Any other page: its heading, its first lines, a row of cards. -->
+      <div aria-hidden="true" class="shell-page mx-auto min-h-[70vh] max-w-7xl px-6 pb-20 pt-12 md:pt-16">
+        <span class="block h-3 w-36 rounded bg-beige/70 animate-pulse motion-reduce:animate-none"></span>
+        <span class="mt-7 block h-10 w-full max-w-xl rounded bg-beige/70 animate-pulse motion-reduce:animate-none md:h-14"></span>
+        <span class="mt-3 block h-10 w-2/3 max-w-md rounded bg-beige/70 animate-pulse motion-reduce:animate-none md:h-14"></span>
+        <span class="mt-8 block max-w-2xl space-y-3">
+          <span class="block h-3.5 w-full rounded bg-beige/70 animate-pulse motion-reduce:animate-none"></span>
+          <span class="block h-3.5 w-11/12 rounded bg-beige/70 animate-pulse motion-reduce:animate-none"></span>
+          <span class="block h-3.5 w-4/5 rounded bg-beige/70 animate-pulse motion-reduce:animate-none"></span>
+        </span>
+        <span class="mt-14 grid gap-4 md:grid-cols-3">
+          <span class="block rounded-[0.875rem] border border-beige bg-white/60 p-5"><span class="block h-5 w-2/3 rounded bg-beige/70 animate-pulse motion-reduce:animate-none"></span><span class="mt-4 block h-3 w-full rounded bg-beige/70 animate-pulse motion-reduce:animate-none"></span><span class="mt-2 block h-3 w-5/6 rounded bg-beige/70 animate-pulse motion-reduce:animate-none"></span></span>
+          <span class="block rounded-[0.875rem] border border-beige bg-white/60 p-5"><span class="block h-5 w-2/3 rounded bg-beige/70 animate-pulse motion-reduce:animate-none"></span><span class="mt-4 block h-3 w-full rounded bg-beige/70 animate-pulse motion-reduce:animate-none"></span><span class="mt-2 block h-3 w-5/6 rounded bg-beige/70 animate-pulse motion-reduce:animate-none"></span></span>
+          <span class="block rounded-[0.875rem] border border-beige bg-white/60 p-5"><span class="block h-5 w-2/3 rounded bg-beige/70 animate-pulse motion-reduce:animate-none"></span><span class="mt-4 block h-3 w-full rounded bg-beige/70 animate-pulse motion-reduce:animate-none"></span><span class="mt-2 block h-3 w-5/6 rounded bg-beige/70 animate-pulse motion-reduce:animate-none"></span></span>
+        </span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
